@@ -7,6 +7,7 @@ import sys
 char_dict = {
     # Humans
     'JOHN:': 'john',
+    'JUNE:': 'john',
     'ROSE:': 'rose',
     'DAVE:': 'dave',
     'JADE:': 'jade',
@@ -41,7 +42,7 @@ char_dict = {
     'CRONUS:': 'eridan',
     'MEENAH:': 'feferi',
     # Cherubs
-    'CALLIOPE:': 'calliope',  # If alt!Calliope, change to Kankri
+    'CALLIOPE:': 'calliope',  # If alt!Calliope, change to kankri
     'CALIBORN:': 'caliborn',
     # Sprites (not incl. sprite^2's)
     'NANNASPRITE:': 'jane',
@@ -68,7 +69,7 @@ spritesquared_dict = {
     # First string: color of the name
     # Second string: color of the speech
     'JASPROSESPRITE^2:': [0, 'jaspersprite', 'rose'],
-    'DAVEPETASPRITE^2:': [6, 'jade', 'dirk']
+    'DAVEPETASPRITE^2:': [6, 'jade', 'dirk']  # Meat 15 uses nepeta, not jade
 }
 
 input = open(sys.argv[1], 'r', encoding="utf8")
