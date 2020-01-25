@@ -1,3 +1,7 @@
+# Homestuck Character Formatter by Paravellex
+# Last modified 1/24/2020
+# Feel free to use for your own projects
+
 import sys
 
 char_dict = {
