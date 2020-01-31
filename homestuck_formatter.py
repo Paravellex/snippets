@@ -52,7 +52,7 @@ char_dict = {
     'MEENAH': 'feferi',
     # Cherubs
     'CALLIOPE': 'calliope',  # If alt!Calliope, change to kankri
-    'CALIBORN': 'caliborn',
+    'CALIBORN': 'caliborn',  # If predominated, change to lordenglish
     # Sprites (not incl. sprite^2's)
     'NANNASPRITE': 'jane',
     'JASPERSPRITE': 'jaspersprite',  # Not the same as Roxy's color!
