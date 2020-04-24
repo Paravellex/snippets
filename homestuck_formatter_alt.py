@@ -87,42 +87,42 @@ in_block = False
 
 for line_raw in input:
     if line_raw == '\n':
-        print("</p>\n\n")
+        print("</p>\n\n",end="")
         in_block = False
         continue
     line = line_raw.rstrip()
     prec = line.split(':', 1)[0]  # Pre-Colon
     if prec in char_dict.keys():
         if not in_block:
-            print("<p class=\"block\">")
+            print("<p class=\"block\">",end="")
             in_block = True
         else:
-            print("<br />\n")
-        print("<span class=\"")
-        print(char_dict[prec])
-        print("\">")
-        print(line)
-        print("</span>")
+            print("<br />\n",end="")
+        print("<span class=\"",end="")
+        print(char_dict[prec],end="")
+        print("\">",end="")
+        print(line,end="")
+        print("</span>",end="")
     elif prec in spritesquared_dict.keys():
         if not in_block:
-            print("<p class=\"block\">")
+            print("<p class=\"block\">",end="")
             in_block = True
         else:
-            print("<br />\n")
-        print("<span class=\"")
-        print(spritesquared_dict[prec][1])
-        print("\">")
-        print(line[:len(prec) + spritesquared_dict[prec][0]])
-        print("</span><span class=\"")
-        print(spritesquared_dict[prec][2])
-        print("\">")
-        print(line[len(prec) + spritesquared_dict[prec][0]:])
-        print("</span>")
+            print("<br />\n",end="")
+        print("<span class=\"",end="")
+        print(spritesquared_dict[prec][1],end="")
+        print("\">",end="")
+        print(line[:len(prec) + spritesquared_dict[prec][0]],end="")
+        print("</span><span class=\"",end="")
+        print(spritesquared_dict[prec][2],end="")
+        print("\">",end="")
+        print(line[len(prec) + spritesquared_dict[prec][0]:],end="")
+        print("</span>",end="")
     else:
         if in_block:
-            print("ERROR on line:" + line)
+            print("ERROR on line:" + line,end="")
             break
-        print("<p class=\"narrative\">")
-        print(line)
-print("</p>")
+        print("<p class=\"narrative\">",end="")
+        print(line,end="")
+print("</p>",end="")
 input.close()
